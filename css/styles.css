@@ -1,3 +1,64 @@
 font-family: 'Spartan', ;
 font-family: 'Montserrat', ;
 font-family: 'Roboto Slab', ;
+
+body {
+  align-items: center;
+  font-family: 'Montserrat';
+}
+
+
+/* navbar */
+.navigation{
+  float: ;
+  font-family: 'Montserrat';
+  background-color: red;
+}
+.navbar{
+
+}
+
+
+/* welcome */
+.welcome {
+  text-align: center;
+  color: white;
+  font-family: 'Spartan';
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5rem;
+  margin-bottom: 2rem;
+  background-image: url('../images/backgrounds/background.jpg');
+  background-size: cover;
+
+
+}
+p{
+
+}
+
+
+/* food menu */
+.menu {
+  align-items: center;
+
+}
+
+
+/* delivery option */
+.delivery {
+
+}
+
+
+/* chckout area */
+.checkout {
+
+}
+
+
+/* footer */
+.footer{
+
+}
