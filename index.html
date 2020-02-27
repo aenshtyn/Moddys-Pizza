@@ -1,110 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Spartan&display=swap" rel="stylesheet">
+  <script src="js/jquery-3.4.1.js"></script>
   <script src = "js/scripts.js"></script>
+
 </head>
 
 
 <body>
 
+  <div class="container">
+    <div class = "navigation" >
+      <div class = "navbar">
 
+        <ul>
+          <a href="">Home</a>
+          <a href=""> About</a>
+          <a href=""> Contact</a>
+        </ul>
 
-<div class = "navigation" >
-  <div class = "navbar">
-    <ul>
-      <a href="http://clipart-library.com/clip-art/1-15351_transparent-background-pizza-slice-clip-art.htm"><img src="http://clipart-library.com/new_gallery/1-15351_transparent-background-pizza-slice-clip-art.png" width="192" height="120" /></a>
-      <img src="http://clipart-library.com/images_k/pizza-transparent-background/pizza-transparent-background-21.png" width="192" height="120" /></a>
-    </ul>
-
-  </div>
-
-</div>
-
-<div class = "welcome" >
-
-</div>
-
-<div class = "menu">
-  <div class= "portfolio">
-    <h2>portfolio</h2>
-    <div id = "workd">
-      <div class="row">
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work4.jpg" alt="Mountains" style="width:100%" class = "workdone" id = "work1">
-            <h6 id = "workn">work 1</h6>
-
-          </div>
-        </div>
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work3.jpg" alt="Lights" style="width:100%" class = "workdone" >
-
-          </div>
-        </div>
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work2.jpg" alt="Nature" style="width:100%" class = "workdone" >
-
-          </div>
-        </div>
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work1.jpg" alt="Mountains" style="width:100%" class = "workdone" >
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work5.jpg" alt="Work5" style="width:100%" class = "workdone" >
-          </div>
-        </div>
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work6.jpg" alt="Lights" style="width:100%" class = "workdone" >
-          </div>
-        </div>
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work7.jpg" alt="Nature" style="width:100%" class = "workdone" >
-          </div>
-        </div>
-        <div class="columnp">
-          <div class="content">
-            <img src="portfolio/work8.jpg" alt="Mountains" style="width:100%" class = "workdone" >
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+
+    <div class = "welcome" >
+
+      <p>welcome to </p>
+      <a href="" ><p><strong>moodys pizzeria</strong></p> </a>
+      <p>You can place you tasty Pizza Orders below</p>
+
+    </div>
+
+    <div class = "menu">
+      <div class= "portfolio">
+        <h2>portfolio</h2>
+        <div id = "workd">
+          <div class="row">
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work4.jpg" alt="Mountains" style="width:100%" class = "workdone" id = "work1">
+                <h6 id = "workn">work 1</h6>
+
+              </div>
+            </div>
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work3.jpg" alt="Lights" style="width:100%" class = "workdone" >
+
+              </div>
+            </div>
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work2.jpg" alt="Nature" style="width:100%" class = "workdone" >
+
+              </div>
+            </div>
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work1.jpg" alt="Mountains" style="width:100%" class = "workdone" >
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work5.jpg" alt="Work5" style="width:100%" class = "workdone" >
+              </div>
+            </div>
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work6.jpg" alt="Lights" style="width:100%" class = "workdone" >
+              </div>
+            </div>
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work7.jpg" alt="Nature" style="width:100%" class = "workdone" >
+              </div>
+            </div>
+            <div class="columnp">
+              <div class="content">
+                <img src="portfolio/work8.jpg" alt="Mountains" style="width:100%" class = "workdone" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-</div>
+    </div>
 
-<div class = "delivery">
+    <div class = "delivery">
+      <p>We also provide delivery options for your orders.</p>
+      <p>do you need our deliverty services </p>
 
-</div>
+      <label for="Yes">Yes:</label><br>
+      <input type="checkbox" name = "yes"  />
+      <label for="Yes">No:</label><br>
+      <input type="checkbox" name = "no"  />
 
-<div class = "checkout">
-
-</div>
-
-<div class = "footer">
-
-</div>
+      <form name = "adress" onsubmit="return validateForm()" method= "post">
+        <input type="text" name="name" placeholder="Name..">
+        <input type="number" name="number" placeholder="Phone Number..">
+        <input type="text" name="adress" placeholder="Adress..">
+        <input type="submit" value = "submit" />
 
 
+        <!-- start of other code -->
+
+        <div class = "container">
 
 
-<script src="js/jquery-3.4.1.js"></script>
 
-</body>
-</html>
+          <div class="row">
+
+            <div class="col-md-6">
+              <form id="new-contact">
+                <div class="form-group">
+                  <label for="new-first-name">First name</label>
+                  <input type="text" class="form-control" id="new-first-name">
+                </div>
+                <div class="form-group">
+                  <label for="new-last-name">Last name</label>
+                  <input type="text" class="form-control" id="new-last-name">
+                </div>
+                <div class="form-group">
+                  <label for="new-phone-number">Phone Number</label>
+                  <input type="text" class="form-control" id="new-phone-number">
+                </div>
+              </div>
+
+              <div class = "col-md-6">
+
+
+                <div id="new-addresses">
+                  <div class="new-address">
+                    <div class="form-group">
+                      <label for="new-street">Street</label>
+                      <input type="text" class="form-control new-street">
+                    </div>
+                    <div class="form-group">
+                      <label for="new-city">City</label>
+                      <input type="text" class="form-control new-city">
+                    </div>
+                    <div class="form-group">
+                      <label for="new-county">County</label>
+                      <input type="text" class="form-control new-county">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+
+
+        <!-- end of other code -->
+
+      </form>
+      <div class = "checkout">
+
+      </div>
+
+      <div class = "footer">
+
+      </div>
+
+
+
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+
+  </body>
+
+  </html>
