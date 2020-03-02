@@ -19,36 +19,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#haPizza").click(function() {
-    $(".hawaiian").toggle();
-
-  });
-});
-
-$(document).ready(function() {
   $("#chiPizza").click(function() {
     $(".chicken").toggle();
   });
 });
-
-$(document).ready(function() {
-  $("#mPizza").click(function() {
-    $(".meat").toggle();
-  });
-});
-
-$(document).ready(function() {
-  $("#boePizza").click(function() {
-    $(".boerowores").toggle();
-  });
-});
-
-$(document).ready(function() {
-  $("#vegPizza").click(function() {
-    $(".veg").toggle();
-  });
-});
-
 
 function myFunction() {
   var coffee = document.getElementById("toppings");
@@ -74,8 +48,8 @@ function down(min) {
     document.getElementById("myNumber").value = min;
   }
 }
-function validateForm() {
 
+function validateForm() {
 
 var x=document.forms["contactUs"]["name"].value;
 if (x==null || x=="")
@@ -104,3 +78,11 @@ if (y==null || y=="") {
       alert ("Your order will be delivered to your adress");
     }
 }
+
+$$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+    	var demovalue = $(this).val();
+        $("div.myDiv").hide();
+        $("#show"+demovalue).show();
+    });
+});
