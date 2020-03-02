@@ -1,6 +1,6 @@
 #Moodys Pizzeria
 
-## Moodys Pizzeria (https://aenshtyn.github.io/Moodys-Pizza/)
+## Moodys Pizzeria (https://aenshtyn.github.io/Moddys-Pizza/)
 
 This is Delani Studios website. Showing a bit of their work
 
