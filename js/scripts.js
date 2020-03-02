@@ -28,15 +28,41 @@ var mushrooms = { name: "Mushrooms", price: 60 };
 var xtraCheese = { name: "Extra Cheese", price: 40 };
 var pineapple = { name: "Pineapple", price: 50 };
 
+var toppingTypes = { name: "Pizza Toppings ", products: [mushrooms, xtraCheese, pineapple ]};
+
 var large = {name: "Large", price: 1000};
 var xtraLarge = {name: "Extra Large", price: 1200};
 var medium = {name: "Medium", price: 800};
+
+var pizzaSizes = { name: "Pizza Sizes", sizes: [ large, xtraLarge, medium]};
 
 var normalCrust = { name: "Normal", price: 0};
 var thinCrust = { name: "Thin", price: 0};
 var thickCrust = { name: "Thick", price: 50};
 
-var pizzeria = { toppings: [mushrooms, xtraCheese, pineapple], sizes: [large, xtraLarge, medium], crusts: [normalCrust, thinCrust, thickCrust]};
+var pizzaCrusts = { name : "Crust Types", types : [normalCrust, thinCrust, thickCrust]};
+
+var pepperoni = { name: "Pepperoni"}
+var chicken = { name: "chicken"}
+var bbq = { name: "bbq"}
+
+var pizzaTypes = { name: "Pizza", types : [pepperoni, chicken, bbq]};
+
+var pizzeria = [toppingTypes, pizzaSizes, pizzaCrusts, pizzaTypes];
+
+pizzeria.forEach(function(pizzer){
+  console.log(pizzer.name + " is:");
+  pizzer.products.forEach(function(product){
+    console.log(product.name, product.price)
+  })
+  console.log("\n");
+})
+
+
+
+$(document).ready(function() {
+    $("button").click(function() {
+
 
 
 
