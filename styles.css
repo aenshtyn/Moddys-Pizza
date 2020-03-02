@@ -1,29 +1,82 @@
-font-family: 'Spartan', ;
-font-family: 'Montserrat', ;
-font-family: 'Roboto Slab', ;
+.header{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 
-body {
-  align-items: center;
-  font-family: 'Montserrat';
 }
-.menu {
-  background-image:  url('../images/backgrounds/background.jpg');
+a {
   text-align: center;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  padding: 10rem;
-  width: 100%;
-  font font-family: 'Montserrat';
-
-}
-h1 {
-  color: #daa520;
-}
-h3 {
-  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+  display:inline-block;
+  float: none;
 }
 
+
+.order {
+  background-image: url('..pizza.jpg');
+
+}
+
+
+.menu{
+
+}
+
+
+.products{
+
+}
+
+
+.cart{
+
+}
+
+
+.delivery{
+
+}
+
+
+.footer {
+text-align: center;
+padding: 2rem;
+font-weight: bold;
+text-transform: capitalize;
+
+}
+.social {
+width: 2rem;
+margin: 1rem;
+}
+.pepperoni {
+  display: none;
+}
+.periperi {
+  display: none;
+}
+.bbq {
+  display:none;
+}
+.hawaiian {
+  display: none;
+}
+.chicken {
+  display: none;
+}
+.meat {
+  display: none;
+}
+.boerowores {
+  display: none;
+}
+.veg {
+  display: none;
+}
+.pizzaOptions {
+  display: none;
+}
 .pepperoni {
   display: none;
 }
@@ -53,7 +106,7 @@ h3 {
 }
 
 body {
-  background-color: white;
+  background-color: #f1f1f1;
   padding: 20px;
   font-family: Arial;
 }
@@ -125,25 +178,4 @@ quantity-btn-color: #95d7fc;
 	.glyphicon {
 	color: $quantity-btn-color;
 	}
-}
-.footer {
-text-align: center;
-padding: 2rem;
-font-weight: bold;
-text-transform: capitalize;
-}
-.socials {
-padding: 2rem;
-}
-.social {
-width: 2rem;
-margin: 1rem;
-}
-
-
-.myDiv{
-	display:none;
-}
-.adressContainer{
-  display: none;
 }
