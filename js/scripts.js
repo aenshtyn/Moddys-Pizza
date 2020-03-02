@@ -24,30 +24,21 @@ $(document).ready(function() {
   });
 });
 
-function myFunction() {
-  var coffee = document.getElementById("toppings");
-  var txt = "";
-  var i;
-  for (i = 0; i < coffee.length; i++) {
-    if (coffee[i].checked) {
-      txt = txt + coffee[i].value + " ";
-    }
-  }
-  document.getElementById("order").value = "You ordered a pizza with: " + txt ;
-}
+var mushrooms = { name: "Mushrooms", price: 60 };
+var xtraCheese = { name: "Extra Cheese", price: 40 };
+var pineapple = { name: "Pineapple", price: 50 };
 
-function up(max) {
-  document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-  if (document.getElementById("myNumber").value >= parseInt(max)) {
-    document.getElementById("myNumber").value = max;
-  }
-}
-function down(min) {
-  document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-  if (document.getElementById("myNumber").value <= parseInt(min)) {
-    document.getElementById("myNumber").value = min;
-  }
-}
+var large = {name: "Large", price: 1000};
+var xtraLarge = {name: "Extra Large", price: 1200};
+var medium = {name: "Medium", price: 800};
+
+var normalCrust = { name: "Normal", price: 0};
+var thinCrust = { name: "Thin", price: 0};
+var thickCrust = { name: "Thick", price: 50};
+
+var pizzeria = { toppings: [mushrooms, xtraCheese, pineapple], sizes: [large, xtraLarge, medium], crusts: [normalCrust, thinCrust, thickCrust]};
+
+
 
 function validateForm() {
 
