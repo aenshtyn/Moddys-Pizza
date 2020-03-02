@@ -6,12 +6,22 @@ body {
   align-items: center;
   font-family: 'Montserrat';
 }
-.welcome {
-  background-image: ;
+.menu {
+  background-image:  url('../images/backgrounds/background.jpg');
   text-align: center;
-  font-size: 50px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  padding: 10rem;
+  width: 100%;
   font font-family: 'Montserrat';
 
+}
+h1 {
+  color: #daa520;
+}
+h3 {
+  text-transform: capitalize;
 }
 
 .pepperoni {
@@ -128,4 +138,12 @@ padding: 2rem;
 .social {
 width: 2rem;
 margin: 1rem;
+}
+
+
+.myDiv{
+	display:none;
+}
+.adressContainer{
+  display: none;
 }

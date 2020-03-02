@@ -16,19 +16,15 @@
 
 
 <body>
+    <div class="menu">
 
-  <div class="container">
 
-    <div class = "welcome" >
-      <p>
+      <h1>
         Welcome to Moodys Pizzeria.
         <br />
         Please make your order below.
-      </p>
-    </div>
+      </h1>
 
-    <div class="menu">
-      <div class = "jumbotron">
 
 
 
@@ -86,7 +82,7 @@
               <img src="images/menu/periperi.jpg" alt="pepperoni" style="width:100%" id = "perPizza">
               <div class = "periperi">
                 <div class = "ingredients">
-                  <p>periperi </p>
+                  <h3>periperi </h3>
                 </div>
 
 
@@ -134,7 +130,7 @@
               <img src="images/menu/chicken.jpg" alt="pepperoni" style="width:100%" id = "chiPizza">
               <div class = "chicken">
                 <div class = "ingredients">
-                  <p>chicken </p>
+                  <h3>chicken </h3>
                 </div>
 
 
@@ -182,7 +178,7 @@
               <img src="images/menu/bbq.jpg" alt="pepperoni" style="width:100%" id = "bbqPizza">
               <div class = "bbq">
                 <div class = "ingredients">
-                  <p>bbq </p>
+                  <h3>bbq </h3>
                 </div>
 
 
@@ -226,14 +222,17 @@
           </div>
         </div>
 
-      </div>
-    </div>
+
 
     <div class = "contact">
 
-      <h2><strong>Your Adress</strong></h2>
-
+      <p>      Do you need our delivery services?      </p>
+      <input type="radio" name="demo" value="Yes"/> Yes
+      <input type="radio" name="demo" value="No"/> No
       <div class="adressContainer">
+        <h4><strong>Your Adress</strong></h4>
+
+
 
         <div class="row">
           <div class="column">
@@ -253,6 +252,9 @@
       </div>
     </div>
 
+  </div>
+</div>
+
     <div class = "footer">
       <div class = "socials">
         <a href="http://www.facebook.com/aenshtyn" target="_blank" ><img src="images/icons/social-icons/facebook.png" alt="logo" class="social"></a>
@@ -263,7 +265,24 @@
 
     </div>
 
-    <!-- END MAIN -->
+    <div>
+
+
+
+
+
+      <div id="showOne" class="myDiv">
+        Radio button <strong>"One"</strong> selected.
+      </div>
+      <div id="showTwo" class="myDiv">
+        Radio button <strong>"Two"</strong> selected.
+      </div>
+      <div id="showThree" class="myDiv">
+        Radio button <strong>"Three"</strong> selected.
+      </div>
+
+      <!-- END MAIN -->
+    </div>
   </div>
 
 </body>
